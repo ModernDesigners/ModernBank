@@ -3,9 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
+      white: "fff",
       mainPurple: "#9E00FF",
       mainBlue: "#0056FD",
-      bg: "#F5F5F5",
+      bg: "#f5f5f5",
       mainText: "rgba(0, 0, 0, 0.80)",
       mainWhite: "rgba(255, 255, 255, 0.90)",
       subText: "rgba(0, 0, 0, 0.50)",
