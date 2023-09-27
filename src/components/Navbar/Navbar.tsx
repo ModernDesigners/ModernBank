@@ -10,7 +10,7 @@ export default function Navbar() {
     return console.log(b);
   };
   return (
-    <div className="fixed h-full w-[285px] bg-mainWhite shadow p-5 flex flex-col justify-between">
+    <div className="left-0 top-0 fixed h-full w-[285px] bg-mainWhite shadow p-5 flex flex-col justify-between">
       <div
         className="bg-bg w-full h-[53px] flex items-center justify-between
         p-2
@@ -36,7 +36,7 @@ export default function Navbar() {
             key={i}
             className="flex items-center gap-2 cursor-pointer p-3 duration-200 hover:bg-bg "
           >
-            <img className="w-[25px]" src={e.icon} alt="" />
+            <img className="w-[25px]" src={e.icon} alt={e.title} />
             <div className="bg-line w-[1px] h-[13px]"></div>
             <p className="font-pmedium">{e.title}</p>
           </div>
