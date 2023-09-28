@@ -4,11 +4,13 @@ import Security from "../../assets/images/icons/shield.svg";
 import History from "../../assets/images/icons/notificationstatus.svg";
 import Limit from "../../assets/images/icons/unlimited.svg";
 import LastPayments from "./components/LastPayment/LastPayments";
+import FastTransfer from "./components/FastTransfer/FastTransfer";
+import Stocks from "./components/Stocks/Stocks";
 
 export default function Dashboard() {
   return (
-    <div className="flex ">
-      <div className="w-6/12 flex flex-col items-center gap-10">
+    <div className="flex gap-[200px] container pt-[100px] pb-[100px] ">
+      <div className="w-6/12 flex flex-col items-center gap-10 ">
         <Card />
         <div className="flex gap-10 p-5">
           <DashboardIcon image={Transfer} title={"Transfer"} />
@@ -18,7 +20,10 @@ export default function Dashboard() {
         </div>
         <LastPayments />
       </div>
-      <div className="w-6/12 "></div>
+      <div className="w-6/12 flex flex-col items-center gap-10 ">
+        <FastTransfer />
+        <Stocks />
+      </div>
     </div>
   );
 }

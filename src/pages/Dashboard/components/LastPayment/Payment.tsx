@@ -1,29 +1,30 @@
 import receipt from "../../../../assets/images/icons/receipt.svg";
 import info from "../../../../assets/images/icons/info.svg";
+import { CheckPriceColor } from "../../../../components/CheckPriceColor";
 interface PaymentInterface {
   title: string;
   image: string;
   price: number;
 }
 export default function Payment({ title, image, price }: PaymentInterface) {
-  const checkPriceColor = (currentPrice: number) => {
-    let isNegative = Math.sign(currentPrice);
-    if (isNegative === 1) {
-      return <p className="font-pmedium text-success">+${currentPrice}</p>;
-    } else {
-      return (
-        <p className="font-pmedium text-warning">-${Math.abs(currentPrice)}</p>
-      );
-    }
-  };
+  let priceColorTernary =
+    CheckPriceColor(price).isNegative === 1 ? (
+      <p className="font-pmedium text-success">
+        +${CheckPriceColor(price).Value}
+      </p>
+    ) : (
+      <p className="font-pmedium text-warning">
+        -${CheckPriceColor(price).Value}
+      </p>
+    );
 
   return (
     <div className="flex justify-between p-4 bg-white rounded-lg items-center">
-      <div className="flex gap-6">
-        <img className="w-[55px] h-[55px]" src={image} alt="" />
+      <div className="flex gap-6 items-center">
+        <img className="w-[47px] h-[47px]" src={image} alt="" />
         <div>
           <p className="font-pmedium text-lg">{title}</p>
-          {checkPriceColor(price)}
+          {priceColorTernary}
         </div>
       </div>
       <div className="flex gap-5">
