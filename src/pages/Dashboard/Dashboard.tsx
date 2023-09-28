@@ -1,4 +1,4 @@
-import Card from "./components/Card";
+import CreditCard from "./components/CreditCard";
 import Transfer from "../../assets/images/icons/arrowswaphorizontal.svg";
 import Security from "../../assets/images/icons/shield.svg";
 import History from "../../assets/images/icons/notificationstatus.svg";
@@ -6,12 +6,15 @@ import Limit from "../../assets/images/icons/unlimited.svg";
 import LastPayments from "./components/LastPayment/LastPayments";
 import FastTransfer from "./components/FastTransfer/FastTransfer";
 import Stocks from "./components/Stocks/Stocks";
-
+interface iconInterface {
+  image: string;
+  title: string;
+}
 export default function Dashboard() {
   return (
-    <div className="flex gap-[200px] container pt-[100px] pb-[100px] ">
-      <div className="w-6/12 flex flex-col items-center gap-10 ">
-        <Card />
+    <div className="flex gap-[200px] container justify-between pt-[100px] pb-[100px] 2xl:gap-20 xl:flex-col  ">
+      <div className="w-6/12 flex flex-col items-center gap-10 xl:w-full">
+        <CreditCard />
         <div className="flex gap-10 p-5">
           <DashboardIcon image={Transfer} title={"Transfer"} />
           <DashboardIcon image={Security} title={"Security"} />
@@ -20,7 +23,7 @@ export default function Dashboard() {
         </div>
         <LastPayments />
       </div>
-      <div className="w-6/12 flex flex-col items-center gap-10 ">
+      <div className="w-6/12 flex flex-col items-center gap-10 xl:w-full">
         <FastTransfer />
         <Stocks />
       </div>
@@ -28,10 +31,6 @@ export default function Dashboard() {
   );
 }
 
-interface iconInterface {
-  image: string;
-  title: string;
-}
 export const DashboardIcon = ({ image, title }: iconInterface) => {
   return (
     <div>
