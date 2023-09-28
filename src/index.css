@@ -6,8 +6,6 @@
   margin: 0px;
   box-sizing: border-box;
 }
-body {
-}
 @font-face {
   font-family: pmedium;
   src: url("./assets/fonts/Poppins-Medium.ttf");
@@ -41,6 +39,17 @@ body {
   width: 90%;
   margin: auto;
   padding-left: 300px;
+}
+@keyframes fly {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 @media screen and (min-width: 1440px) {
   .container {

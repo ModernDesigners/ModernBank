@@ -1,12 +1,11 @@
 import Navbar from "./components/Navbar/Navbar";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import Login from "./pages/Login/Login";
+import Authentication from "./pages/Authentication/Authentication";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Dashboard />
+      <Authentication />
     </>
   );
 }

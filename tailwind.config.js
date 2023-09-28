@@ -13,8 +13,11 @@ export default {
       mainWhite: "rgba(255, 255, 255, 0.90)",
       subText: "rgba(0, 0, 0, 0.50)",
       subWhite: "rgba(255, 255, 255, 0.80)",
+      subBlack: "rgba(0, 0, 0, 0.60)",
+      subBlack2: "rgba(0, 0, 0, 0.70)",
       iconBg: "rgba(217, 217, 217, 0.25)",
       iconBgHover: "rgba(217, 217, 217, 0.50)",
+      iconBgHover2: "rgb(240, 240, 240)",
       line: "rgba(51, 51, 51, 0.30)",
       warning: "rgba(203, 0, 24, 0.80)",
       success: "rgba(0, 203, 45, 0.80)",
@@ -42,6 +45,9 @@ export default {
       xl: { max: "1424px" },
       // => @media (max-width: 1279px) { ... }
 
+      xls: { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+
       lg: { max: "991px" },
       // => @media (max-width: 1023px) { ... }
 
@@ -50,10 +56,16 @@ export default {
 
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
+
+      mobile: { max: "450px" },
     },
+
     extend: {
       borderRadius: {
         "5xl": "50px",
+      },
+      animation: {
+        fly: "fly 6s ease-in-out infinite",
       },
     },
   },
