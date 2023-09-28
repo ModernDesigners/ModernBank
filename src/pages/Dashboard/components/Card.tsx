@@ -4,7 +4,7 @@ import mBank from "../../../assets/images/icons/MBANK.svg";
 
 export default function Card() {
   return (
-    <div className="flex flex-col h-[228px] justify-between p-7 bg-gradient-to-br from-mainBlue via-mainPurple to-mainPurple w-[600px] rounded-lg shadow-md shadow-mainPurple">
+    <div className="flex flex-col h-[228px] justify-between p-7 bg-gradient-to-br from-mainBlue to-mainPurpleFade w-[600px] rounded-2xl shadow-cardShadow">
       <div className="flex justify-between">
         <h1 className="text-3xl text-white font-pmedium">$10,388.32</h1>
         <div className="flex flex-col gap-4">

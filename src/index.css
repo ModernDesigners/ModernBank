@@ -6,14 +6,32 @@
   margin: 0px;
   box-sizing: border-box;
 }
-body {
-  padding: 100px 50px 100px 350px;
-}
 @font-face {
   font-family: pmedium;
   src: url("./assets/fonts/Poppins-Medium.ttf");
 }
 @font-face {
+  font-family: pbold;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
   font-family: kmedium;
   src: url("./assets/fonts/K2D-Medium.ttf");
+}
+.text-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inputBg {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.inputBg:hover,
+.inputBg:focus {
+  opacity: 1;
 }

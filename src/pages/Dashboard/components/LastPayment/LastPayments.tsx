@@ -4,7 +4,7 @@ import { LastPaymentAPI } from "../../../../API/LastPaymentAPI";
 export default function LastPayments() {
   return (
     <div className="w-full">
-      <h1 className="tracking-wider font-semibold font-kmedium text-[22px] pb-3 border-b-2 border-b-line">
+      <h1 className="tracking-wider font-semibold font-kmedium text-[22px] pb-3 border-b border-b-line">
         Last Payments
       </h1>
       <div className="pt-5 flex flex-col gap-5">
