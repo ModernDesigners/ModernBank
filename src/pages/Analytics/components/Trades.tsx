@@ -13,24 +13,24 @@ export default function Trades() {
         </div>
         <div className="text-center">
           <h2 className="text-gray text-[18px] font-pmedium">This Month</h2>
-          <p className="font-pmedium text-success text-[16px] m-2">4 505%</p>
-          <p className="font-pmedium text-warning text-[16px] m-2">13 600$</p>
+          <p className="font-pmedium text-success text-[16px] m-2">$4 505</p>
+          <p className="font-pmedium text-warning text-[16px] m-2">$13 600</p>
           <div className="w-30px bg-line h-[1px]"></div>
-          <p className="font-pmedium text-success text-[16px] m-2">9 095$</p>
+          <p className="font-pmedium text-success text-[16px] m-2">$9 095</p>
         </div>
         <div className="text-center">
           <h2 className="text-gray text-[18px] font-pmedium">This Month</h2>
-          <p className="font-pmedium text-success text-[16px] m-2">4 505%</p>
-          <p className="font-pmedium text-warning text-[16px] m-2">13 600$</p>
+          <p className="font-pmedium text-success text-[16px] m-2">$4 505</p>
+          <p className="font-pmedium text-warning text-[16px] m-2">$13 600</p>
           <div className="w-30px bg-line h-[1px]"></div>
-          <p className="font-pmedium text-success text-[16px] m-2">9 095$</p>
+          <p className="font-pmedium text-success text-[16px] m-2">$9 095</p>
         </div>
         <div className="text-center">
           <h2 className="text-gray text-[18px] font-pmedium">This Month</h2>
-          <p className="font-pmedium text-success text-[16px] m-2">4 505%</p>
-          <p className="font-pmedium text-warning text-[16px] m-2">13 600$</p>
+          <p className="font-pmedium text-success text-[16px] m-2">$4 505</p>
+          <p className="font-pmedium text-warning text-[16px] m-2">$13 600</p>
           <div className="w-30px bg-line h-[1px]"></div>
-          <p className="font-pmedium text-success text-[16px] m-2">9 095$</p>
+          <p className="font-pmedium text-success text-[16px] m-2">$9 095</p>
         </div>
       </div>
       <button className="font-pmedium bg-black p-2 rounded-xl mt-3 text-white w-[220px]">

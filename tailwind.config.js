@@ -12,10 +12,12 @@ export default {
       black: "#000000",
       mainText: "rgba(0, 0, 0, 0.80)",
       mainWhite: "rgba(255, 255, 255, 0.90)",
+      mainBlack: "rgba(0, 0, 0, 0.90)",
       subText: "rgba(0, 0, 0, 0.50)",
       subWhite: "rgba(255, 255, 255, 0.80)",
       subBlack: "rgba(0, 0, 0, 0.60)",
       subBlack2: "rgba(0, 0, 0, 0.70)",
+      paragraph: "rgba(0, 0, 0, 0.50)",
       iconBg: "rgba(217, 217, 217, 0.25)",
       iconBgHover: "rgba(217, 217, 217, 0.50)",
       iconBgHover2: "rgb(240, 240, 240)",
@@ -64,6 +66,9 @@ export default {
     extend: {
       borderRadius: {
         "5xl": "50px",
+      },
+      fontSize: {
+        sm2: "12px",
       },
       animation: {
         fly: "fly 6s ease-in-out infinite",
