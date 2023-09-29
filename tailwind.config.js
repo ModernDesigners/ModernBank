@@ -9,6 +9,7 @@ export default {
       mainBlue: "#0056FD",
       bg: "#f5f5f5",
       gray: "#a3a3a3",
+      black: "#000000",
       mainText: "rgba(0, 0, 0, 0.80)",
       mainWhite: "rgba(255, 255, 255, 0.90)",
       subText: "rgba(0, 0, 0, 0.50)",
@@ -18,7 +19,7 @@ export default {
       iconBg: "rgba(217, 217, 217, 0.25)",
       iconBgHover: "rgba(217, 217, 217, 0.50)",
       iconBgHover2: "rgb(240, 240, 240)",
-      line: "rgba(51, 51, 51, 0.30)",
+      line: "rgba(51, 51, 51, 0.05)",
       warning: "rgba(203, 0, 24, 0.80)",
       success: "rgba(0, 203, 45, 0.80)",
       linear:

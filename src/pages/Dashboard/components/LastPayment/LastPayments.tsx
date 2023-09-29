@@ -3,7 +3,6 @@ import { LastPaymentAPI } from "../../../../API/LastPaymentAPI";
 import { useState } from "react";
 export default function LastPayments() {
   const [showMore, setShowMore] = useState(4);
-  console.log(showMore);
 
   return (
     <div className="w-full pt-[20px]">
