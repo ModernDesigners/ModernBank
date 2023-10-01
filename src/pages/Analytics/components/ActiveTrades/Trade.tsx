@@ -19,11 +19,12 @@ export default function Trade({
         -${CheckPriceColor(percentage).Value}
       </p>
     );
+
   return (
     <div className="flex flex-col gap-[10px] items-center w-[30%] p-5">
       <img src={coinImage} className="w-[55px]" alt="" />
       <p className="font-kmedium">{coinName}</p>
-      <p className="text-success font-pmedium">{priceColorTernary}</p>
+      {priceColorTernary}
       <div className="flex">
         <button className="text-[14px] font-kmedium border-t border-l border-b border-success rounded-l-lg  p-[8px] w-[80px] ">
           BUY

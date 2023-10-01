@@ -20,7 +20,7 @@ export default function TransactionCard({
     return withSpacing;
   };
   return (
-    <div className="w-[450px] bg-white text-center p-8 flex-col flex gap-5">
+    <div className="w-[450px] max-w-[100%] bg-white text-center p-8 flex-col flex gap-5">
       <h2 className="font-kmedium text-xl">
         {isIncome ? "INCOME" : "OUTCOME"}
       </h2>

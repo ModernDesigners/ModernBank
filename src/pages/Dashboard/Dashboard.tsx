@@ -12,7 +12,7 @@ interface iconInterface {
 }
 export default function Dashboard() {
   return (
-    <div className="flex gap-[200px] container justify-between pt-[100px] pb-[100px] 2xl:gap-20 xl:flex-col  ">
+    <div className="flex gap-[200px] container justify-between  2xl:gap-20 xl:flex-col  ">
       <div className="w-6/12 flex flex-col items-center gap-10 xl:w-full">
         <CreditCard />
         <div className="flex gap-10 p-5 md:flex-wrap md:justify-center">

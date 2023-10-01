@@ -43,23 +43,11 @@ export default {
     },
     screens: {
       "2xl": { max: "1750px" },
-      // => @media (max-width: 1535px) { ... }
-
-      xl: { max: "1424px" },
-      // => @media (max-width: 1279px) { ... }
-
+      xl: { max: "1440px" },
       xls: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
-
       lg: { max: "991px" },
-      // => @media (max-width: 1023px) { ... }
-
       md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
-
-      sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
-
+      sm: { max: "590px" },
       mobile: { max: "450px" },
     },
 

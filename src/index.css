@@ -38,7 +38,6 @@
 .container {
   width: 90%;
   margin: auto;
-  padding-left: 300px;
 }
 @keyframes fly {
   0% {
@@ -56,10 +55,5 @@
     width: 2200px;
     max-width: 90%;
     margin: auto;
-  }
-}
-@media screen and (max-width: 991px) {
-  .container {
-    padding-left: 0px;
   }
 }
