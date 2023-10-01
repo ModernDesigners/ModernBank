@@ -1,5 +1,4 @@
-import Stock from "./Stock";
-import a from "../../../../assets/images/coins/btc.png";
+import Stock from "../../../../components/Stock";
 import { StocksAPI } from "../../../../API/StocksAPI";
 
 export default function Stocks() {

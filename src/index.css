@@ -35,10 +35,7 @@
 .inputBg:focus {
   opacity: 1;
 }
-.container {
-  width: 90%;
-  margin: auto;
-}
+
 @keyframes fly {
   0% {
     transform: translateY(0px);
@@ -49,6 +46,10 @@
   100% {
     transform: translateY(0px);
   }
+}
+.container {
+  width: 90%;
+  margin: auto;
 }
 @media screen and (min-width: 1440px) {
   .container {

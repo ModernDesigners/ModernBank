@@ -1,5 +1,5 @@
-import { CheckPriceColor } from "../../../../components/CheckPriceColor";
-import diagram from "../../../../assets/images/icons/diagram.svg";
+import { CheckPriceColor } from "./CheckPriceColor";
+import diagram from "../assets/images/icons/diagram.svg";
 interface StockInterface {
   price: number;
   coinTitle: string;
