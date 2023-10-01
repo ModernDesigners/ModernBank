@@ -36,7 +36,7 @@ export default function Navbar() {
           <img src={user} className="" alt="User" />
           <div className="">
             <p className="font-pmedium line-0 leading-3">JOHN KORTIS</p>
-            <p className="font-pmedium text-[11px] text-gray text-sm opacity-60">
+            <p className="font-pmedium text-[12px] text-gray opacity-60">
               CO OPERATOR
             </p>
           </div>
