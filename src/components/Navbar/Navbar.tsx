@@ -81,7 +81,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="fixed top-5 right-5 w-[122px] h-[45px] bg-white rounded-md flex items-center justify-center lg:hidden">
+      <div className="fixed shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-15px] top-5 right-5 w-[122px] h-[45px] bg-white rounded-md flex items-center justify-center lg:hidden">
         <div className="w-full h-full ">
           <button className="w-full h-full transition duration-150 flex justify-center items-center hover:bg-subWhite3 rounded-l-md">
             <img src={NotificationsIcon} alt="NotificationsIcon" />
