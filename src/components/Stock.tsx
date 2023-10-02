@@ -25,7 +25,7 @@ export default function Stock({ price, coinTitle, image }: StockInterface) {
         </div>
         <div>
           <h2 className="font-kmedium text-xl">{coinTitle}</h2>
-          <p className="font-kmedium text-xl">{priceColorTernary}</p>
+          {priceColorTernary}
         </div>
       </div>
       <div className="p-4 bg-bg rounded-xl cursor-pointer">

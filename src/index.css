@@ -51,6 +51,9 @@
   width: 90%;
   margin: auto;
 }
+.fl-wrap:nth-child(2n) {
+  flex-basis: 100%;
+}
 @media screen and (min-width: 1440px) {
   .container {
     width: 2200px;

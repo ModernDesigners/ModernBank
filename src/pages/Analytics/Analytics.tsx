@@ -3,7 +3,7 @@ import Spends from "./components/Spends";
 import Trades from "./components/Trades";
 import TransactionCard from "./components/TransactionCard";
 
-export default function Analytics() {
+export default function Statistics() {
   return (
     <div className="container flex flex-col gap-10">
       <div className="flex  w-full justify-center">
