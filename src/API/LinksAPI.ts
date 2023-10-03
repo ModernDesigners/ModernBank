@@ -1,14 +1,17 @@
-import dashboard from "../assets/images/icons/category.svg";
-import analytics from "../assets/images/icons/activity.svg";
-import contacts from "../assets/images/icons/profile2user.svg";
-import history from "../assets/images/icons/book.svg";
-import stocks from "../assets/images/icons/coin.svg";
-import help from "../assets/images/icons/messagequestion.svg";
+import {
+  dashboard,
+  analytics,
+  contacts,
+  history,
+  stocks,
+  help,
+} from "../assets/images/icons/iconsSvg";
+
 export const LinksAPI = [
   {
     icon: dashboard,
     title: "Dashboard",
-    LinkTo: "/",
+    LinkTo: "Dashboard",
   },
   {
     icon: analytics,

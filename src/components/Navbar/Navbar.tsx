@@ -17,7 +17,6 @@ export default function Navbar() {
     setActiveLink(location.pathname);
   }, [location.pathname]);
   const [activeLink, setActiveLink] = useState<null | string>(null);
-  console.log(activeLink?.slice(1));
 
   return (
     <>
@@ -76,7 +75,7 @@ export default function Navbar() {
                   activeLink?.slice(1) === e.LinkTo ? "activeNav" : ""
                 } flex items-center gap-2 cursor-pointer p-3 duration-200 hover:bg-bg  rounded-lg `}
               >
-                <img className="w-[25px]" src={e.icon} alt={e.title} />
+                {e.icon}
                 <div className="bg-line w-[1px] h-[13px]"></div>
                 <p className="font-pmedium">{e.title}</p>
               </div>

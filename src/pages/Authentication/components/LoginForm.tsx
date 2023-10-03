@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LoginForm(props: {
   show: boolean;
@@ -58,12 +59,14 @@ export default function LoginForm(props: {
       <div className="mt-7 flex flex-col gap-1">
         <p className="text-subWhite tracking-wider font-pbold text-center ">
           Dont Have Account?{" "}
-          <span
-            onClick={() => props.setShow(2)}
-            className="text-white cursor-pointer relative before:content-'' before:left-0 before:absolute before:w-0 before:h-[2px] before:bottom-[-1.5px] before:rounded-lg before:bg-white hover:before:w-full before:transition-all before:duration-200"
-          >
-            Register
-          </span>
+          <Link to={"/Register"}>
+            <span
+              onClick={() => props.setShow(2)}
+              className="text-white cursor-pointer relative before:content-'' before:left-0 before:absolute before:w-0 before:h-[2px] before:bottom-[-1.5px] before:rounded-lg before:bg-white hover:before:w-full before:transition-all before:duration-200"
+            >
+              Register
+            </span>
+          </Link>
         </p>
         <p className=" inline-flex mx-auto tracking-wider font-pbold text-center text-white cursor-pointer relative before:content-'' before:left-0 before:absolute before:w-0 before:h-[2px] before:bottom-[-1.5px] before:rounded-lg before:bg-white hover:before:w-full before:transition-all before:duration-200">
           Forgot Password

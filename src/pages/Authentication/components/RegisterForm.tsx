@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function RegisterForm(props: {
   show: boolean;
@@ -85,12 +86,14 @@ export default function RegisterForm(props: {
       <div className="mt-7 flex flex-col gap-1">
         <p className="text-subWhite tracking-wider font-pbold text-center ">
           Already have an account?{" "}
-          <span
-            onClick={() => props.setShow(1)}
-            className="text-white cursor-pointer relative before:content-'' before:left-0 before:absolute before:w-0 before:h-[2px] before:bottom-[-1.5px] before:rounded-lg before:bg-white hover:before:w-full before:transition-all before:duration-200"
-          >
-            Log in
-          </span>
+          <Link to={"/Login"}>
+            <span
+              onClick={() => props.setShow(1)}
+              className="text-white cursor-pointer relative before:content-'' before:left-0 before:absolute before:w-0 before:h-[2px] before:bottom-[-1.5px] before:rounded-lg before:bg-white hover:before:w-full before:transition-all before:duration-200"
+            >
+              Log in
+            </span>
+          </Link>
         </p>
       </div>
     </div>

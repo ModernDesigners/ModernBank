@@ -37,7 +37,11 @@
 }
 
 .activeNav {
-  @apply bg-gradient-to-br from-mainBlue to-mainPurpleFade;
+  @apply bg-gradient-to-br from-mainBlue to-mainPurpleFade text-mainWhite;
+  box-shadow: 8px 8px 0px rgba(174, 0, 255, 0.2);
+}
+.activeNav svg path {
+  @apply stroke-white;
 }
 
 @keyframes fly {

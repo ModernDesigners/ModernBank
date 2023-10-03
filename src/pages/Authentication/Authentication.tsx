@@ -3,10 +3,17 @@ import LoginNavbar from "../../components/Navbar/LoginNavbar";
 import WelcomeSide from "./components/WelcomeSide";
 import RegisterForm from "./components/RegisterForm";
 import downArrow from "../../assets/images/icons/downArrow.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Authentication() {
   const [show, setShow] = useState(1);
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname == "/Register") setShow(2);
+    if (location.pathname == "/Login") setShow(1);
+  }, []);
+
   return (
     <div className="flex min-h-screen xls:flex-col">
       <LoginNavbar />
