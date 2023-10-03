@@ -5,14 +5,28 @@ import profileUser from "../../assets/images/icons/profile2userBlack.svg";
 import arrangeverticalsquare from "../../assets/images/icons/arrangeverticalsquare.svg";
 import card from "../../assets/images/icons/whiteCard.svg";
 import removeArchive from "../../assets/images/icons/archiveminus.svg";
-export default function Contact() {
+import { Ifriends } from "./Contacts";
+
+export default function Contact({ id, name, img, status }: Ifriends) {
+  const getStatus = (statusId: number) => {
+    switch (statusId) {
+      case 1:
+        return "Friend";
+      case 2:
+        return "Favorite";
+      case 3:
+        return "Employee";
+      default:
+        return "Status_undefined";
+    }
+  };
   return (
-    <div className="flex justify-between pl-4 pr-4">
+    <div data-id={id} className="flex justify-between pl-4 pr-4">
       <div className="flex items-center gap-3 ">
-        <img src={a} className="w-[55px]" alt="" />
+        <img src={img} className="w-[55px]" alt="" />
         <div>
-          <h2 className="font-pmedium">Nick Murrow</h2>
-          <p className="font-pmedium text-xs text-gray">Manager</p>
+          <h2 className="font-pmedium">{name}</h2>
+          <p className="font-pmedium text-xs text-gray">{getStatus(status)}</p>
         </div>
       </div>
       <div className="flex gap-6">

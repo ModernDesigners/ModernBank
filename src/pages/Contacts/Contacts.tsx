@@ -1,32 +1,30 @@
-import { useState } from "react";
-import arrowup from "../../assets/images/icons/arrowup2.svg";
-import Contact from "./Contact";
+import { useMemo } from "react";
+import friendsAPI from "../../API/FriendsAPI";
+import ContactList from "./ContactList";
+
+export interface Ifriends {
+  id: number;
+  img: string;
+  name: string;
+  status: number;
+}
 
 export default function Contacts() {
-  const [activeMenus, setActiveMenus] = useState({
-    Friends: true,
-    Favorites: false,
-    Employees: false,
-  });
+  const friends: Ifriends[] = friendsAPI;
+  const friendsList = useMemo(() => {
+    return {
+      friends: friends.filter((item) => item.status == 1),
+      favorites: friends.filter((item) => item.status == 2),
+      employees: friends.filter((item) => item.status == 3),
+    };
+  }, []);
   return (
     <div className="container">
       <h1 className="font-pmedium text-2xl mb-4">Contacts</h1>
-      <div
-        className={`${activeMenus.Friends ? "" : "h-[60px]"} overflow-hidden`}
-      >
-        <div className="flex cursor-pointer justify-between bg-white bg-opacity-40 p-4 hover:bg-opacity-100 duration-200">
-          <p className="font-kmedium text-lg">Friends</p>
-          <img
-            className={`${activeMenus.Friends ? "" : "rotate-180"}`}
-            src={arrowup}
-            alt=""
-          />
-        </div>
-        <div className="bg-white p-3 flex flex-col gap-5">
-          <Contact />
-          <Contact />
-          <Contact />
-        </div>
+      <div className=" rounded-2xl overflow-hidden bg-mainWhite h-[calc(100vh-200px)] overflow-y-auto">
+        <ContactList listName="Friends" list={friendsList.friends} />
+        <ContactList listName="Favorites" list={friendsList.favorites} />
+        <ContactList listName="Employees" list={friendsList.employees} />
       </div>
     </div>
   );
