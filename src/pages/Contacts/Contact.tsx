@@ -21,7 +21,10 @@ export default function Contact({ id, name, img, status }: Ifriends) {
     }
   };
   return (
-    <div data-id={id} className="flex justify-between pl-4 pr-4">
+    <div
+      data-id={id}
+      className="flex justify-between pl-4 pr-4 sm:flex-col sm:items-center sm:gap-10 sm:border-b-2 sm:border-b-line sm:pb-6"
+    >
       <div className="flex items-center gap-3 ">
         <img src={img} className="w-[55px]" alt="" />
         <div>

@@ -16,24 +16,24 @@ export default function History() {
       <div>
         <h1 className="font-pmedium text-2xl mb-4">Today</h1>
         <div className="bg-white rounded-lg ">
-          {randomPayment(4).map((e) => (
-            <Payment title={e.title} image={e.image} price={e.price} />
+          {randomPayment(4).map((e, i) => (
+            <Payment key={i} title={e.title} image={e.image} price={e.price} />
           ))}
         </div>
       </div>
       <div>
         <h1 className="font-pmedium text-2xl mb-4">Yesterday</h1>
         <div className="bg-white rounded-lg ">
-          {randomPayment(2).map((e) => (
-            <Payment title={e.title} image={e.image} price={e.price} />
+          {randomPayment(2).map((e, i) => (
+            <Payment key={i} title={e.title} image={e.image} price={e.price} />
           ))}
         </div>
       </div>
       <div>
         <h1 className="font-pmedium text-2xl mb-4">This Week</h1>
         <div className="bg-white rounded-lg ">
-          {randomPayment(3).map((e) => (
-            <Payment title={e.title} image={e.image} price={e.price} />
+          {randomPayment(3).map((e, i) => (
+            <Payment key={i} title={e.title} image={e.image} price={e.price} />
           ))}
         </div>
       </div>

@@ -6,6 +6,7 @@ export default function StocksList() {
     <div className="bg-white rounded-xl p-4 flex flex-col gap-5">
       {[...StocksAPI, ...StocksAPI].map((e, i) => (
         <Stock
+          key={i}
           price={e.Percentage}
           coinTitle={e.coinTitle}
           image={e.coinImage}

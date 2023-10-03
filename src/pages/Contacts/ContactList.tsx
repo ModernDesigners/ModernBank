@@ -18,7 +18,7 @@ export default function ContactList(props: {
           {props.listName + " " + `(${props.list.length})`}
         </p>
         <img
-          className={`${list ? "" : "rotate-180"} select-none`}
+          className={`${list ? "" : "rotate-180"} select-none duration-200`}
           src={arrowup}
           alt=""
         />

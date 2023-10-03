@@ -36,6 +36,10 @@
   opacity: 1;
 }
 
+.activeNav {
+  @apply bg-gradient-to-br from-mainBlue to-mainPurpleFade;
+}
+
 @keyframes fly {
   0% {
     transform: translateY(0px);

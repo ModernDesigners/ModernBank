@@ -22,6 +22,7 @@ export default function Help() {
             let background = e.background;
             return (
               <div
+                key={i}
                 style={{ background }}
                 className="p-2 rounded-lg w-[150px]  text-center cursor-pointer md:w-full"
               >

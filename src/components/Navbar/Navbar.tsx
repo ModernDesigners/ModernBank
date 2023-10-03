@@ -4,12 +4,20 @@ import moon from "../../assets/images/icons/moon.svg";
 import card from "../../assets/images/icons/card.svg";
 import discount from "../../assets/images/icons/discountshape.svg";
 import { LinksAPI } from "../../API/LinksAPI";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NotificationsIcon from "../../assets/images/icons/notification.svg";
 import SettingsIcon from "../../assets/images/icons/setting.svg";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
+  const [activeLink, setActiveLink] = useState<null | string>(null);
+  console.log(activeLink?.slice(1));
 
   return (
     <>
@@ -38,35 +46,41 @@ export default function Navbar() {
             }`}
           ></span>
         </div>
-        <div
-          className="bg-bg w-full h-[53px] flex items-center justify-between
+        <Link to={"/Profile"}>
+          <div
+            className=" bg-bg w-full h-[53px] flex items-center justify-between
         p-2 lg:w-[340px] lg:p-5 lg:justify-center max-w-full  rounded-md  sm2:w-[250px]  sm2:justify-normal
       "
-        >
-          <div className="flex items-center  gap-2">
-            <img src={user} className="" alt="User" />
-            <div className="">
-              <p className="font-pmedium line-0 leading-3">JOHN KORTIS</p>
-              <p className="font-pmedium text-[12px] text-paragraph">
-                CO OPERATOR
-              </p>
+          >
+            <div className="flex items-center  gap-2">
+              <img src={user} className="" alt="User" />
+              <div className="">
+                <p className="font-pmedium line-0 leading-3">JOHN KORTIS</p>
+                <p className="font-pmedium text-[12px] text-paragraph">
+                  CO OPERATOR
+                </p>
+              </div>
+            </div>
+            <div className="h-9 aspect-square bg-mainWhite rounded-md flex justify-center items-center cursor-pointer transition duration-150 hover:bg-subWhite2 lg:hidden">
+              <img src={arrow} className="h-5 opacity-90" alt="arrowIcon" />
             </div>
           </div>
-          <div className="h-9 aspect-square bg-mainWhite rounded-md flex justify-center items-center cursor-pointer transition duration-150 hover:bg-subWhite2 lg:hidden">
-            <img src={arrow} className="h-5 opacity-90" alt="arrowIcon" />
-          </div>
-        </div>
+        </Link>
 
         <div className="flex flex-col gap-5 sm2:w-full ">
           {LinksAPI.map((e: any, i: number) => (
-            <div
-              key={i}
-              className="flex items-center gap-2 cursor-pointer p-3 duration-200 hover:bg-bg "
-            >
-              <img className="w-[25px]" src={e.icon} alt={e.title} />
-              <div className="bg-line w-[1px] h-[13px]"></div>
-              <p className="font-pmedium">{e.title}</p>
-            </div>
+            <Link to={e.LinkTo} key={i}>
+              <div
+                key={i}
+                className={`${
+                  activeLink?.slice(1) === e.LinkTo ? "activeNav" : ""
+                } flex items-center gap-2 cursor-pointer p-3 duration-200 hover:bg-bg  rounded-lg `}
+              >
+                <img className="w-[25px]" src={e.icon} alt={e.title} />
+                <div className="bg-line w-[1px] h-[13px]"></div>
+                <p className="font-pmedium">{e.title}</p>
+              </div>
+            </Link>
           ))}
         </div>
         <div className="flex gap-5 sm2:justify-center sm2:w-full">

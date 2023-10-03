@@ -8,31 +8,31 @@ export const LinksAPI = [
   {
     icon: dashboard,
     title: "Dashboard",
-    LinkTo: "",
+    LinkTo: "/",
   },
   {
     icon: analytics,
     title: "Analytics",
-    LinkTo: "",
+    LinkTo: "Analytics",
   },
   {
     icon: contacts,
     title: "Contacts",
-    LinkTo: "",
+    LinkTo: "Contacts",
   },
   {
     icon: history,
     title: "History",
-    LinkTo: "",
+    LinkTo: "History",
   },
   {
     icon: stocks,
     title: "Stocks",
-    LinkTo: "",
+    LinkTo: "Stocks",
   },
   {
     icon: help,
     title: "Help",
-    LinkTo: "",
+    LinkTo: "Help",
   },
 ];
