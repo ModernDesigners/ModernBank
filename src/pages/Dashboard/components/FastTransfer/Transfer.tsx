@@ -11,7 +11,7 @@ export default function Transfer({
   userImage,
 }: TransferInterface) {
   return (
-    <div className="flex justify-between bg-white rounded-lg p-2 mobile:flex-col mobile:items-center">
+    <div className="flex shadow-getShadow justify-between bg-white rounded-lg p-2 mobile:flex-col mobile:items-center">
       <div className="flex items-center gap-4">
         <img src={userImage} alt="" className="w-[49px] mobile:py-5" />
         <div>

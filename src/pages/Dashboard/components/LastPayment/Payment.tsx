@@ -19,7 +19,7 @@ export default function Payment({ title, image, price }: PaymentInterface) {
     );
 
   return (
-    <div className="flex justify-between p-4 bg-white rounded-lg items-center">
+    <div className="flex shadow-getShadow justify-between p-4 bg-white rounded-lg items-center">
       <div className="flex gap-6 items-center">
         <img className="w-[47px] h-[47px]" src={image} alt="" />
         <div>

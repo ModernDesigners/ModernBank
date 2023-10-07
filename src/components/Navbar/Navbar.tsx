@@ -5,9 +5,8 @@ import card from "../../assets/images/icons/card.svg";
 import discount from "../../assets/images/icons/discountshape.svg";
 import { LinksAPI } from "../../API/LinksAPI";
 import { useEffect, useState } from "react";
-import NotificationsIcon from "../../assets/images/icons/notification.svg";
-import SettingsIcon from "../../assets/images/icons/setting.svg";
 import { Link, useLocation } from "react-router-dom";
+import SettingsBar from "./SettingsBar";
 
 export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
@@ -94,19 +93,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="fixed shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-15px] top-5 right-5 w-[122px] h-[45px] bg-white rounded-md flex items-center justify-center lg:hidden">
-        <div className="w-full h-full ">
-          <button className="w-full h-full transition duration-150 flex justify-center items-center hover:bg-subWhite3 rounded-l-md">
-            <img src={NotificationsIcon} alt="NotificationsIcon" />
-          </button>
-        </div>
-        <div className="h-[28px] w-[2px] min-w-[2px] bg-subWhite2"></div>
-        <div className="w-full h-full ">
-          <button className="w-full h-full transition duration-150 flex justify-center items-center hover:bg-subWhite3 rounded-r-md">
-            <img src={SettingsIcon} alt="SettingsIcon" />
-          </button>
-        </div>
-      </div>
+      <SettingsBar />
     </>
   );
 }

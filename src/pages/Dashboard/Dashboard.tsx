@@ -34,7 +34,7 @@ export default function Dashboard() {
 export const DashboardIcon = ({ image, title }: iconInterface) => {
   return (
     <div>
-      <div className="w-[65px] h-[65px]  shadow-md mb-3 bg-white flex justify-center items-center rounded-xl">
+      <div className="w-[65px] cursor-pointer shadow-getShadow h-[65px]  shadow-md mb-3 bg-white flex justify-center items-center rounded-xl transition-colors duration-150 hover:bg-subWhite2">
         <img className="w-[20px]" src={image} alt="" />
       </div>
       <p className="font-kmedium text-[15px] text-center">{title}</p>

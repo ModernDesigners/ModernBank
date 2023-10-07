@@ -27,8 +27,8 @@ export default {
       iconBgHover: "rgba(217, 217, 217, 0.50)",
       iconBgHover2: "rgb(240, 240, 240)",
       line: "rgba(51, 51, 51, 0.05)",
-      warning: "rgba(203, 0, 24, 0.80)",
-      success: "rgba(0, 203, 45, 0.80)",
+      warning: "rgb(203, 0, 24)",
+      success: "rgb(0, 203, 45)",
       linear:
         "linear-gradient(282.83deg, #9E00FF 0.37%, #AD00FF 0.38%, #0056FD 100%)",
       inputStart: "rgba(255, 255, 255, 0.15)",
@@ -40,6 +40,7 @@ export default {
       cardShadow: " 0px 0px 50px rgba(97, 0, 255, 0.50)",
       logoShadow: "0px 10px 0px rgba(255, 255, 255, 0.25)",
       glowShadow: "0px 0px 30px rgba(255, 255, 255, 0.30)",
+      getShadow: "0px 2px 10px rgba(0, 0, 0, 0.05)",
     },
     fontFamily: {
       pmedium: ["pmedium"],
