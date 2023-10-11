@@ -21,7 +21,7 @@ export default function Navbar() {
     <>
       <nav
         className={`left-0 top-0 fixed h-full w-[285px] z-10 bg-mainWhite shadow p-5 flex flex-col justify-between duration-300  lg:justify-normal lg:items-center sm2:items-start lg:w-full lg:gap-7 lg:h-[100px] lg:overflow-hidden lg:bg-white lg:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]  ${
-          isNavbarOpen ? "lg:h-[600px]" : ""
+          isNavbarOpen ? "lg:h-[650px]" : ""
         }`}
       >
         <div
@@ -73,6 +73,7 @@ export default function Navbar() {
                 className={`${
                   activeLink?.slice(1) === e.LinkTo ? "activeNav" : ""
                 } flex items-center gap-2 cursor-pointer p-3 duration-200 hover:bg-bg  rounded-lg `}
+                onClick={() => setIsNavbarOpen(false)}
               >
                 {e.icon}
                 <div className="bg-line w-[1px] h-[13px]"></div>
